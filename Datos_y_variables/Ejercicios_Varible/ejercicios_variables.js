@@ -3,6 +3,7 @@
  * Imprimir los resultados en pantalla con un console.log()
  */
 
+
 /** Declarar 10 variables de cada tipo de dato sin tomar en cuenta objetos, arrays y null
 * Pueden variar entre las palabras reservadas var, let y const
 *      -number
@@ -13,9 +14,9 @@
 // VARIABLES DE TIPO NUMBER
 
 const diametroInternoTR= 3.823;
-let inyeccionNitrogeno= 15;
+var inyeccionNitrogeno= 15;
 let bombeoLodoBpm=1;
-let bombeoLodoGpm=42;
+var bombeoLodoGpm=42;
 const diametroExtTubFlex=2;
 let longTubFlex= 5000;
 const espesorParteSuperior= 0.222;
@@ -51,6 +52,7 @@ var isTemperaturaConstante= false;
 var isHorizontal= true;
 var isIncrementoConstante= true;
 
+
 /** Declarar variables numericas y realizar las operaciones aritmeticas basicas
  *      -suma
  *      -resta
@@ -69,6 +71,7 @@ let FlujoVolumetricoMezcla= flujoVolumetricoGas+bombeoLodoGpm;
 //RESTA
 let diametroInteriorSuperior= diametroExtTubFlex-(2*espesorParteSuperior);
 
+
 /** Declarar variables que concatenen cadenas de texto
  *      -5 mensajes diferentes en pantalla, sin limite de palabras.
  */
@@ -79,12 +82,20 @@ let factorFriccion= 'Al ' + pasoSiete + ' es posible ' + pasoOcho;
 let densidadMezcla= 'No es posible ' + pasoCuatro + ' sin ' + pasoUno
 let velocidadAnular= 'Es necesario ' + pasoCinco + ' para poder ' + pasoSeis
 
+
 /** Declarar 5 variables y convertirlas a otro tipo de dato
  */
 
-// De NUMBER a STRING
+//NUMBER A STRING
+var inyeccionNitrogenoString=String (inyeccionNitrogeno);
+var bombeoLodoBpmString= String (bombeoLodoBpm);
 
-// De STRING a NUMBER
-var nuevaEdadNumber= Number(nuevaEdad);
+//Convertimos de string a number
+let ejemplo='12';
+let ejemploString= Number(ejemplo);
 
-//
+let ejemplo2='1900';
+let ejemplo2String= Number(ejemplo2);
+
+//Convertir a booleano
+var bombeoLodoBpmBoolean= Boolean(bombeoLodoBpm);
